@@ -1,0 +1,15 @@
+<svg xmlns="http://www.svg.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Yellow Background -->
+  <rect width="400" height="400" fill="#FDB827" rx="40" />
+  
+  <!-- Red Cross Base -->
+  <path d="M 120,160 h 50 v -50 h 60 v 50 h 50 v 60 h -50 v 50 h -60 v -50 h -50 z" fill="none" stroke="#D31224" stroke-width="12" stroke-linejoin="round" />
+  
+  <!-- Stylized S Curve through the center -->
+  <path d="M 180,100 c -60,0 -80,50 -10,100 c 70,50 50,100 -10,100 c -20,0 -30,-10 -30,-20" fill="none" stroke="#D31224" stroke-width="30" stroke-linecap="round" />
+  <path d="M 230,300 c 60,0 80,-50 10,-100 c -70,-50 -50,-100 10,-100 c 20,0 30,10 30,20" fill="none" stroke="#D31224" stroke-width="30" stroke-linecap="round" />
+
+  <!-- Text -->
+  <text x="200" y="340" font-family="sans-serif" font-weight="900" font-size="46" fill="#D31224" text-anchor="middle" letter-spacing="2">POPULAR</text>
+  <text x="200" y="375" font-family="sans-serif" font-weight="700" font-size="20" fill="#D31224" text-anchor="middle" letter-spacing="1">JANA NEETHI</text>
+</svg>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Popular Jananeethi Medicals and Surgicals - Your trusted partner for medical and surgical supplies.">
+    <title>Popular Jananeethi Medicals and Surgicals</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="header" class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg xmlns="http://www.svg.org/2000/svg" viewBox="0 0 100 100" width="45" height="45" style="border-radius: 8px; flex-shrink: 0;">
+                    <rect width="100" height="100" fill="#FDB827" rx="20" />
+                    <path d="M 40,60 H 20 V 40 H 40 V 20 H 60 V 40 H 80 V 60 H 60 V 80 H 40 Z" fill="#D31224" />
+                    <path d="M 50,15 C 10,15 20,50 50,50 C 80,50 90,85 50,85" fill="none" stroke="#FDB827" stroke-width="8" stroke-linecap="round" />
+                    <path d="M 50,15 C 10,15 20,50 50,50 C 80,50 90,85 50,85" fill="none" stroke="#D31224" stroke-width="4" stroke-linecap="round" />
+                </svg>
+                <div class="logo-text" style="margin-left: 12px; display: flex; flex-direction: column; justify-content: center;">
+                    <span class="logo-title" style="color: #D31224; font-size: 1.25rem; font-weight: 800; line-height: 1.1;">POPULAR JANA NEETHI</span>
+                    <span class="logo-subtitle" style="color: #cda200; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px;">MEDICALS & SURGICALS</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Products & Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-menu-btn" aria-label="Close menu">
+            <i data-lucide="x"></i>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About Us</a>
+            <a href="#services" class="mobile-nav-link">Products & Services</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg" style="background-image: url('images/hero_medical_bg_1785491622741.png');"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-text-content">
+                    <span class="badge">Trusted Healthcare Partner</span>
+                    <h1 class="hero-title">Quality Medical & <br>Surgical Supplies</h1>
+                    <p class="hero-subtitle">Providing top-tier pharmaceutical products and advanced surgical equipment to ensure the best care for you and your patients.</p>
+                    <div class="hero-cta">
+                        <a href="#services" class="btn btn-primary">Explore Products</a>
+                        <a href="#contact" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats/Features Bar -->
+        <section class="features-bar">
+            <div class="container features-container">
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper"><i data-lucide="shield-check"></i></div>
+                    <div class="feature-info">
+                        <h3>Certified Quality</h3>
+                        <p>100% Genuine Products</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper"><i data-lucide="truck"></i></div>
+                    <div class="feature-info">
+                        <h3>Fast Delivery</h3>
+                        <p>Reliable & Timely</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper"><i data-lucide="headphones"></i></div>
+                    <div class="feature-info">
+                        <h3>24/7 Support</h3>
+                        <p>Expert Assistance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2 class="section-title">About Popular Jananeethi</h2>
+                    <div class="title-underline"></div>
+                    <p class="about-text">
+                        Welcome to <strong>Popular Jananeethi Medicals and Surgicals</strong>. We are a premier provider of high-quality pharmaceuticals, healthcare products, and advanced surgical equipment. 
+                    </p>
+                    <p class="about-text">
+                        Our mission is to bridge the gap between quality healthcare products and the people who need them. With years of experience and a deep commitment to community health, we ensure that every product we stock meets the highest standards of safety and efficacy.
+                    </p>
+                    <ul class="about-list">
+                        <li><i data-lucide="check-circle-2"></i> Comprehensive range of medicines</li>
+                        <li><i data-lucide="check-circle-2"></i> Professional surgical instruments</li>
+                        <li><i data-lucide="check-circle-2"></i> Trusted by healthcare professionals</li>
+                    </ul>
+                </div>
+                <div class="about-image-wrapper">
+                    <div class="about-image-card">
+                        <div class="experience-badge">
+                            <span class="years">10+</span>
+                            <span class="text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services/Products Section -->
+        <section id="services" class="section services bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Our Products & Services</h2>
+                    <div class="title-underline center"></div>
+                    <p class="section-subtitle">We offer a comprehensive selection of healthcare solutions tailored to meet professional and personal needs.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/service_medicines_1785491633972.png" alt="Pharmacy & Medicines" class="service-img">
+                            <div class="service-icon"><i data-lucide="pill"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Pharmacy & Medicines</h3>
+                            <p>A wide selection of prescription medications, over-the-counter drugs, and healthcare supplements from trusted brands.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <img src="images/service_surgicals_1785491644826.png" alt="Surgical Equipment" class="service-img">
+                            <div class="service-icon"><i data-lucide="scissors"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Surgical Equipment</h3>
+                            <p>High-grade surgical instruments, disposables, and hospital supplies designed for precision, safety, and reliability.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-img-container">
+                            <div class="placeholder-img bg-gradient"></div>
+                            <div class="service-icon"><i data-lucide="activity"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Healthcare Devices</h3>
+                            <p>Modern diagnostic tools and monitoring devices for clinics, hospitals, and home healthcare management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="title-underline"></div>
+                        <p class="contact-desc">Have questions about our products or need to place a bulk order? Reach out to us, and our team will be happy to assist you.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-box"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <h4>Visit Us</h4>
+                                    <p>[Address Placeholder]<br>[City, State, Zip]</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-box"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>[Phone Number Placeholder]</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon-box"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>[Email Placeholder]</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <p><strong>Follow us:</strong></p>
+                            <a href="#" class="social-btn" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Mock implementation)');">
+                            <h3>Send us a Message</h3>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" placeholder="Product Inquiry">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message <i data-lucide="send" class="btn-icon"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo footer-logo">
+                    <svg xmlns="http://www.svg.org/2000/svg" viewBox="0 0 100 100" width="50" height="50" style="border-radius: 8px; flex-shrink: 0;">
+                        <rect width="100" height="100" fill="#FDB827" rx="20" />
+                        <path d="M 40,60 H 20 V 40 H 40 V 20 H 60 V 40 H 80 V 60 H 60 V 80 H 40 Z" fill="#D31224" />
+                        <path d="M 50,15 C 10,15 20,50 50,50 C 80,50 90,85 50,85" fill="none" stroke="#FDB827" stroke-width="8" stroke-linecap="round" />
+                        <path d="M 50,15 C 10,15 20,50 50,50 C 80,50 90,85 50,85" fill="none" stroke="#D31224" stroke-width="4" stroke-linecap="round" />
+                    </svg>
+                    <div class="logo-text" style="margin-left: 12px; display: flex; flex-direction: column; justify-content: center;">
+                        <span class="logo-title" style="color: white; font-size: 1.25rem; font-weight: 800; line-height: 1.1;">POPULAR JANA NEETHI</span>
+                        <span class="logo-subtitle" style="color: #FDB827; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.5px;">MEDICALS & SURGICALS</span>
+                    </div>
+                </div>
+                <p class="footer-about">Your trusted partner for quality medical and surgical supplies. Committed to health, committed to you.</p>
+            </div>
+            
+            <div class="footer-links-group">
+                <div class="footer-widget">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Products & Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2026 Popular Jananeethi Medicals and Surgicals. All rights reserved.</p>
+                <p>Designed with <i data-lucide="heart" class="heart-icon"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
