@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openServiceModal = (key) => {
         const data = SERVICE_DATA[key];
         if (!data) return;
-        const waUrl = `https://wa.me/?text=${encodeURIComponent(data.waText)}`;
+        const waUrl = `https://wa.me/918943226001?text=${encodeURIComponent(data.waText)}`;
         openModal(`
             <span class="modal-badge">${data.badge}</span>
             <h3 class="modal-title">${data.title}</h3>
