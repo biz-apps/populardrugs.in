@@ -19,16 +19,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalBackdrop = document.getElementById('modalBackdrop');
     const openSearchBtn = document.getElementById('openSearchBtn');
 
-    // Sticky header elevation
-    const onScroll = () => {
-        if (window.scrollY > 12) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
+    // Sticky header elevation (rAF-throttled to avoid forced synchronous reflow)
+    let scrollTicking = false;
+    const updateHeaderShadow = () => {
+        scrollTicking = false;
+        header.classList.toggle('scrolled', window.scrollY > 12);
     };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    window.addEventListener('scroll', () => {
+        if (!scrollTicking) {
+            scrollTicking = true;
+            window.requestAnimationFrame(updateHeaderShadow);
+        }
+    }, { passive: true });
 
     // Mobile drawer controls
     const setDrawerOpen = (isOpen) => {

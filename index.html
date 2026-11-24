@@ -266,15 +266,19 @@
     }
     </script>
 
-    <!-- Google Fonts -->
+    <!-- Preload Hero LCP Image -->
+    <link rel="preload" as="image" type="image/webp" imagesrcset="images/hero-pharmacy-mobile.webp 640w, images/hero-pharmacy.webp 960w" imagesizes="(max-width: 820px) 100vw, 62vw" fetchpriority="high">
+
+    <!-- Google Fonts (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
 
-    <!-- Lucide Icons (pinned direct URL to avoid redirects for search crawlers) -->
-    <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+    <!-- Lucide Icons (deferred so it never blocks first paint) -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
 </head>
 <body>
 
@@ -313,7 +317,7 @@
         <div class="container header-inner">
             <!-- Brand Logo -->
             <a href="#home" class="brand-logo" aria-label="Popular Jana Neethi Medicals and Surgicals Home">
-                <img src="images/logo-mark-red.png" alt="Popular Jana Neethi Logo" class="brand-mark-img" width="48" height="46">
+                <img src="images/logo-mark-red.webp" alt="Popular Jana Neethi Logo" class="brand-mark-img" width="48" height="46">
                 <div class="brand-text">
                     <span class="brand-title">POPULAR</span>
                     <span class="brand-sub">JANA NEETHI</span>
@@ -390,7 +394,7 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-visual">
-                <img src="images/hero-pharmacy.jpg" alt="Popular Jana Neethi Modern Pharmacy Store" class="hero-photo">
+                <img src="images/hero-pharmacy.webp" srcset="images/hero-pharmacy-mobile.webp 640w, images/hero-pharmacy.webp 960w" sizes="(max-width: 820px) 100vw, 62vw" alt="Popular Jana Neethi Modern Pharmacy Store" class="hero-photo" width="960" height="536" fetchpriority="high" decoding="async">
                 <!-- Sweeping Double Curve Divider (Yellow + Crimson) -->
                 <svg class="hero-curve-svg" viewBox="0 0 180 420" preserveAspectRatio="none" aria-hidden="true">
                     <!-- Cream left fill -->
@@ -488,9 +492,9 @@
 
                 <div class="services-grid">
                     <!-- Card 1: Medicines -->
-                    <article id="service-medicines" class="service-card" data-service-modal="medicines" tabindex="0" role="button" aria-label="View Medicines details">
+                    <div id="service-medicines" class="service-card" data-service-modal="medicines" tabindex="0" role="button" aria-label="View Medicines details">
                         <div class="service-media">
-                            <img src="images/service-medicines.jpg" alt="Prescription and general medicines" loading="lazy">
+                            <img src="images/service-medicines.webp" alt="Prescription and general medicines" width="560" height="313" loading="lazy" decoding="async">
                         </div>
                         <div class="service-body">
                             <div class="service-badge-icon">
@@ -504,12 +508,12 @@
                                 <i data-lucide="chevron-right"></i>
                             </span>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Card 2: Surgical Products -->
-                    <article id="service-surgicals" class="service-card" data-service-modal="surgicals" tabindex="0" role="button" aria-label="View Surgical Products details">
+                    <div id="service-surgicals" class="service-card" data-service-modal="surgicals" tabindex="0" role="button" aria-label="View Surgical Products details">
                         <div class="service-media">
-                            <img src="images/service-surgicals.jpg" alt="Surgical items, consumables and hospital supplies" loading="lazy">
+                            <img src="images/service-surgicals.webp" alt="Surgical items, consumables and hospital supplies" width="560" height="313" loading="lazy" decoding="async">
                         </div>
                         <div class="service-body">
                             <div class="service-badge-icon">
@@ -523,12 +527,12 @@
                                 <i data-lucide="chevron-right"></i>
                             </span>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Card 3: Medical Equipment -->
-                    <article id="service-equipment" class="service-card" data-service-modal="equipment" tabindex="0" role="button" aria-label="View Medical Equipment details">
+                    <div id="service-equipment" class="service-card" data-service-modal="equipment" tabindex="0" role="button" aria-label="View Medical Equipment details">
                         <div class="service-media">
-                            <img src="images/service-equipment.jpg" alt="Healthcare devices for home and clinical use" loading="lazy">
+                            <img src="images/service-equipment.webp" alt="Healthcare devices for home and clinical use" width="560" height="313" loading="lazy" decoding="async">
                         </div>
                         <div class="service-body">
                             <div class="service-badge-icon">
@@ -542,13 +546,13 @@
                                 <i data-lucide="chevron-right"></i>
                             </span>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Card 4: EMI Shopping -->
-                    <article id="service-emi" class="service-card" data-service-modal="emi" tabindex="0" role="button" aria-label="View EMI Shopping details">
+                    <div id="service-emi" class="service-card" data-service-modal="emi" tabindex="0" role="button" aria-label="View EMI Shopping details">
                         <div class="service-media">
                             <span class="promo-tag">EMI AVAILABLE</span>
-                            <img src="images/service-emi.jpg" alt="Buy medical equipment with easy EMI plans" loading="lazy">
+                            <img src="images/service-emi.webp" alt="Buy medical equipment with easy EMI plans" width="560" height="313" loading="lazy" decoding="async">
                         </div>
                         <div class="service-body">
                             <div class="service-badge-icon">
@@ -562,13 +566,13 @@
                                 <i data-lucide="chevron-right"></i>
                             </span>
                         </div>
-                    </article>
+                    </div>
 
                     <!-- Card 5: Equipment Rental -->
-                    <article id="service-rental" class="service-card" data-service-modal="rental" tabindex="0" role="button" aria-label="View Equipment Rental details">
+                    <div id="service-rental" class="service-card" data-service-modal="rental" tabindex="0" role="button" aria-label="View Equipment Rental details">
                         <div class="service-media">
                             <span class="promo-tag">RENTAL SERVICE</span>
-                            <img src="images/service-rental.jpg" alt="Rent hospital and home-care equipment" loading="lazy">
+                            <img src="images/service-rental.webp" alt="Rent hospital and home-care equipment" width="560" height="313" loading="lazy" decoding="async">
                         </div>
                         <div class="service-body">
                             <div class="service-badge-icon">
@@ -582,7 +586,7 @@
                                 <i data-lucide="chevron-right"></i>
                             </span>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -594,12 +598,12 @@
                 <!-- Left Card: Order Medicines from Home -->
                 <div id="order-home" class="promo-card promo-delivery">
                     <div class="promo-delivery-visual">
-                        <img src="images/promo-delivery.jpg" alt="Popular Jana Neethi Home Delivery Executive" width="320" height="320" loading="lazy">
+                        <img src="images/promo-delivery.webp" alt="Popular Jana Neethi Home Delivery Executive" width="360" height="360" loading="lazy" decoding="async">
                     </div>
                     <div class="promo-delivery-content">
                         <h3>Order <span class="text-red">Medicines<br>from Home</span></h3>
                         <p>Send your prescription on WhatsApp and get your medicines delivered safely to your doorstep.</p>
-                        <a href="https://wa.me/918943226001?text=Hello%20Popular%20Jana%20Neethi%20Medicals%2C%20here%20is%20my%20prescription%20for%20home%20delivery." target="_blank" rel="noopener noreferrer" class="btn-primary-red btn-sm">
+                        <a href="https://wa.me/918943226001?text=Hello%20Popular%20Jana%20Neethi%20Medicals%2C%20I%20would%20like%20to%20order%20medicines." target="_blank" rel="noopener noreferrer" class="btn-primary-red btn-sm">
                             <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12.031 2C6.508 2 2.022 6.486 2.022 12.008c0 1.763.461 3.485 1.337 5.002L2 22l5.121-1.343a9.953 9.953 0 0 0 4.91 1.292h.004c5.522 0 10.008-4.486 10.008-10.008C22.043 6.486 17.554 2 12.031 2zm5.826 14.13c-.246.693-1.43 1.326-1.976 1.41-.498.076-1.148.108-1.855-.118-.428-.137-.978-.32-1.68-.623-2.956-1.277-4.885-4.262-5.033-4.459-.148-.197-1.202-1.6-1.202-3.053 0-1.452.761-2.166 1.031-2.462.27-.295.59-.369.786-.369.197 0 .394.002.566.01.182.009.426-.069.666.509.246.591.836 2.044.91 2.192.074.148.123.32.025.517-.098.197-.148.32-.295.492-.148.172-.31.385-.443.517-.148.148-.301.309-.13.605.172.295.764 1.26 1.64 2.041 1.127 1.005 2.077 1.317 2.372 1.464.295.148.468.123.64-.074.172-.197.738-.861.935-1.157.197-.295.394-.246.664-.148.271.098 1.723.812 2.018.96.295.148.492.222.566.345.074.123.074.713-.172 1.406z"/>
                             </svg>
@@ -707,7 +711,7 @@
                         </button>
                     </div>
                     <div class="promo-rental-visual">
-                        <img src="images/service-rental.jpg" alt="Hospital bed and wheelchair available on rent" width="480" height="270" loading="lazy">
+                        <img src="images/service-rental.webp" alt="Hospital bed and wheelchair available on rent" width="560" height="313" loading="lazy" decoding="async">
                     </div>
                 </div>
 
@@ -795,7 +799,7 @@
             <!-- Col 1: Brand -->
             <div class="footer-col footer-brand-col">
                 <a href="#home" class="brand-logo brand-logo-white">
-                    <img src="images/logo-mark-white.png" alt="Popular Jana Neethi Logo" class="brand-mark-img" width="52" height="50">
+                    <img src="images/logo-mark-white.webp" alt="Popular Jana Neethi Logo" class="brand-mark-img" width="52" height="50" loading="lazy" decoding="async">
                     <div class="brand-text">
                         <span class="brand-title">POPULAR</span>
                         <span class="brand-sub">JANA NEETHI</span>
@@ -878,6 +882,6 @@
         </a>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

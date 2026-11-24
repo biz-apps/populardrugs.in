@@ -1720,19 +1720,22 @@ button {
         padding: 0 14px;
     }
 
-    /* Compact 2x2 Top Utility Bar on Phones */
+    /* Compact 2x2 Top Utility Bar on Phones (WCAG/Lighthouse touch-target compliant) */
     .top-bar-inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 6px 10px;
+        gap: 8px 12px;
         padding-top: 8px;
         padding-bottom: 8px;
-        font-size: 0.74rem;
+        font-size: 0.76rem;
     }
 
     .top-bar-item {
         justify-content: center;
         gap: 6px;
+        min-height: 36px;
+        padding: 6px 8px;
+        border-radius: 8px;
     }
 
     .top-bar-item svg {
