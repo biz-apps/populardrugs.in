@@ -4,20 +4,19 @@
 
 ## Core Pages & Services
 - [Home & Complete Healthcare Overview](https://www.populardrugs.in/): Official website for Popular Jana Neethi Medicals & Surgicals.
-- [Medicines & Jan Aushadhi Generics](https://www.populardrugs.in/#service-medicines): Genuine prescription medications, chronic-care refills, affordable Jan Aushadhi generic medicines, and wellness supplements.
-- [Surgical Products & Hospital Supplies](https://www.populardrugs.in/#service-surgicals): Stainless steel surgical instruments, sterile gauze, bandages, medical gloves, IV sets, catheters, and clinic consumables.
-- [Medical Equipment](https://www.populardrugs.in/#service-equipment): Digital blood pressure monitors, pulse oximeters, nebulizers, glucometers, stethoscopes, and home diagnostic devices.
-- [EMI Shopping for Medical Equipment](https://www.populardrugs.in/#service-emi): Easy monthly installment (EMI) plans for oxygen concentrators (5L/10L), CPAP/BiPAP machines, patient monitors, and motorized hospital beds.
-- [Medical Equipment Rental](https://www.populardrugs.in/#service-rental): Affordable daily, weekly, and monthly rentals of sanitized Fowler/Semi-Fowler hospital beds, wheelchairs, oxygen concentrators, BiPAP/CPAP units, and air mattresses.
+- [Medical Equipment Rental in Perinthalmanna](https://www.populardrugs.in/equipment-rental.html): Affordable daily, weekly, and monthly rentals of sanitized Fowler/Semi-Fowler hospital beds, wheelchairs, 5L/10L oxygen concentrators, BiPAP/CPAP units, and air mattresses.
+- [Buy Medical Equipment on EMI](https://www.populardrugs.in/emi-medical-equipment.html): Easy monthly installment (EMI) plans for oxygen concentrators, CPAP/BiPAP machines, patient monitors, and motorized hospital beds.
+- [Jan Aushadhi Kendra & Prescription Medicines](https://www.populardrugs.in/jan-aushadhi-medicines.html): Genuine prescription medications, chronic-care refills, affordable Pradhan Mantri Jan Aushadhi generic medicines, and WhatsApp doorstep delivery.
+- [Surgical Products & Hospital Supplies](https://www.populardrugs.in/surgical-supplies.html): Stainless steel surgical instruments, sterile gauze, bandages, medical gloves, IV sets, catheters, orthopedic supports, and clinic consumables.
+- [Our 4 Store Locations & Hours](https://www.populardrugs.in/stores.html): Exact addresses, phone numbers, opening hours, and directions for all branches in Perinthalmanna and Angadippuram.
 - [Frequently Asked Questions](https://www.populardrugs.in/#faq): Direct answers on store locations, rentals, EMI options, home delivery, and opening hours.
 
 ## Store Locations (Malappuram, Kerala)
-- [Jan Aushadhi Kendra — Angadippuram](https://www.google.com/maps/search/?api=1&query=Jan+Aushadhi+Kendra+Calicut+road+Angadippuram+Kerala+679321): Calicut Road, Angadippuram, Kerala 679321 (Mon–Sat).
-- [Popular Jananeethi Medicals and Surgicals — Ootty Road](https://www.google.com/maps/search/?api=1&query=Popular+Jananeethi+Medicals+and+Surgicals+Ootty+Road+Perintalmanna+Kerala+679322): Ootty Road, State Highway 39, Perinthalmanna, Kerala 679322 (Mon–Sat).
-- [Pradhan Mantri Jan Aushadhi Kendra — Shanti Nagar](https://www.google.com/maps/search/?api=1&query=Pradhan+Mantri+Jan+Aushadhi+Kendra+Shanti+Nagar+Perintalmanna+Kerala+679322): Shanti Nagar, Perinthalmanna, Kerala 679322 (Mon–Sat).
-- [Prime Minister Jan Aushadhi Center — Opposite Moulana Hospitals](https://www.google.com/maps/search/?api=1&query=Moulana+Hospital+Perinthalmanna+Kerala+679322): Opposite Moulana Hospitals, Perinthalmanna, Malappuram, Kerala 679322 (Mon–Sat).
+- [Jan Aushadhi Kendra — Angadippuram](https://www.google.com/maps/search/?api=1&query=Jan+Aushadhi+Kendra+Calicut+road+Angadippuram+Kerala+679321): Calicut Road, Angadippuram, Kerala 679321 · Phone: +91 98474 90005 · Mon–Sat 8:30 AM – 8:30 PM.
+- [Popular Jananeethi Medicals and Surgicals — Ootty Road](https://www.google.com/maps/search/?api=1&query=Popular+Jananeethi+Medicals+and+Surgicals+Ootty+Road+Perintalmanna+Kerala+679322): Ootty Road, State Highway 39, Perinthalmanna, Kerala 679322 · Phone: +91 98470 13757 · Mon–Sat 8:00 AM – 8:30 PM.
+- [Pradhan Mantri Jan Aushadhi Kendra — Shanti Nagar](https://www.google.com/maps/search/?api=1&query=Pradhan+Mantri+Jan+Aushadhi+Kendra+Shanti+Nagar+Perintalmanna+Kerala+679322): Shanti Nagar, Perinthalmanna, Kerala 679322 · Phone: +91 98474 90005 · Mon–Sat 9:00 AM – 8:30 PM.
+- [Prime Minister Jan Aushadhi Center — Opposite Moulana Hospitals](https://www.google.com/maps/search/?api=1&query=Moulana+Hospital+Perinthalmanna+Kerala+679322): Opposite Moulana Hospitals, Perinthalmanna, Malappuram, Kerala 679322 · Phone: +91 89432 26001 · Mon–Sat 9:00 AM – 8:30 PM.
 
 ## Ordering & Contact
 - [Order Medicines on WhatsApp (+91 89432 26001)](https://wa.me/918943226001): Send your prescription on WhatsApp for doorstep home delivery in and around Perinthalmanna and Angadippuram.
-- [Store Locator](https://www.populardrugs.in/#stores): Find directions and contact details for all branches.
 - [XML Sitemap](https://www.populardrugs.in/sitemap.xml): Machine-readable sitemap for search engines and AI crawlers.

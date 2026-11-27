@@ -124,25 +124,29 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'Jan Aushadhi Kendra — Angadippuram',
             address: 'Calicut road, Angadippuram, Kerala 679321',
-            hours: 'Mon – Sat · Opens at 9:30 AM',
+            hours: 'Mon – Sat · 8:30 AM – 8:30 PM',
+            phone: '+91 98474 90005',
             maps: 'https://www.google.com/maps/search/?api=1&query=Jan+Aushadhi+Kendra+Calicut+road+Angadippuram+Kerala+679321'
         },
         {
             name: 'Popular Jananeethi Medicals and Surgicals',
             address: 'OOTTY ROAD, State Highway 39, Perintalmanna, Kerala 679322',
-            hours: 'Mon – Sat · Opens at 9:30 AM',
+            hours: 'Mon – Sat · 8:00 AM – 8:30 PM',
+            phone: '+91 98470 13757',
             maps: 'https://www.google.com/maps/search/?api=1&query=Popular+Jananeethi+Medicals+and+Surgicals+Ootty+Road+Perintalmanna+Kerala+679322'
         },
         {
             name: 'Pradhan Mantri Jan Aushadhi Kendra — Shanti Nagar',
             address: 'Shanti Nagar, Perintalmanna, Kerala 679322',
-            hours: 'Mon – Sat · Opens at 9:30 AM',
+            hours: 'Mon – Sat · 9:00 AM – 8:30 PM',
+            phone: '+91 98474 90005',
             maps: 'https://www.google.com/maps/search/?api=1&query=Pradhan+Mantri+Jan+Aushadhi+Kendra+Shanti+Nagar+Perintalmanna+Kerala+679322'
         },
         {
             name: 'Prime Minister Jan Aushadhi Center — Moulana Hospital',
             address: 'Opposite Moulana Hospitals, Perinthalmanna, Malappuram, Kerala 679322',
-            hours: 'Mon – Sat · Opens at 9:30 AM',
+            hours: 'Mon – Sat · 9:00 AM – 8:30 PM',
+            phone: '+91 89432 26001',
             maps: 'https://www.google.com/maps/search/?api=1&query=Moulana+Hospital+Perinthalmanna+Kerala+679322'
         }
     ];
@@ -319,4 +323,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     openSearchBtn?.addEventListener('click', openSearchModal);
+
+    // GA4 Lead Conversion Event Tracking (WhatsApp, Call, Store Directions)
+    document.addEventListener('click', (e) => {
+        const link = e.target.closest('a[href]');
+        if (!link || typeof window.gtag !== 'function') return;
+        const href = link.getAttribute('href') || '';
+        const label = (link.dataset.branch || link.textContent || '').trim().slice(0, 80);
+
+        if (href.includes('wa.me/')) {
+            window.gtag('event', 'whatsapp_order_click', {
+                event_category: 'lead',
+                event_label: label,
+                page_path: window.location.pathname
+            });
+        } else if (href.startsWith('tel:')) {
+            window.gtag('event', 'store_call_click', {
+                event_category: 'lead',
+                event_label: label || href.replace('tel:', ''),
+                page_path: window.location.pathname
+            });
+        } else if (href.includes('google.com/maps')) {
+            window.gtag('event', 'store_directions_click', {
+                event_category: 'lead',
+                event_label: label,
+                page_path: window.location.pathname
+            });
+        }
+    });
 });
